@@ -2,7 +2,7 @@ class ReverseString
 {
     public static String reverse(String str,char c2[])
     {
-        char[] c=str.toCharArray();
+        char[] c=str.toCharArray();//convert string into array
         int len = c.length-1;
         for(int i=0;i<=len;i++)
         {
@@ -11,7 +11,7 @@ class ReverseString
              c2[j]=c[len-i];
             }
         }
-        String s=new String(c2);
+        String s=new String(c2);//converting array into string
         return s;
     }
     public static void main(String[]args)
