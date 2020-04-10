@@ -9,7 +9,7 @@ public class symmetricMatrix
             for(int i=0;i<len;i++)
             {
                 for(int j=0;j<len;j++)
-                    sym[i][j]=mat[j][i];
+                    sym[i][j]=mat[j][i];//transpose
             }
             for(int q=0;q<len;q++)
             {
@@ -35,13 +35,13 @@ public class symmetricMatrix
         System.out.println();
     }
 
-        printTri(mat,sym,len);
+        printTri(mat,sym,len);//calling method
 
     for(int t=0;t<len;t++)
         for(int f=0;f<len;f++)
-            if(mat[t][f] !=sym[t][f])
-                return false;
-    return true;
+            if(mat[t][f] !=sym[t][f])//comparing two arrays
+                return false;//not symmetric immediately return false and exit program
+    return true;//not return always execute its statement
     }
 
     public static void main(String[]args)
