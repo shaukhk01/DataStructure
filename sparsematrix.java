@@ -37,7 +37,12 @@ public class sparsematrix
                     size++;
             }
         }
-        int[][] spar=new int[3][size];//spar[][] having 3 block and each block having 6 subblock
+        int[][] spar=new int[3][size];/*3-->Because we need only each element of Row
+                                       * -->each element of Column and Their Value
+                                       *  so Total things are 3 therefor we take 3 block
+                                       *  and each block size corresponding to non-zero element.
+                                       *  i.e [3][size eqaul to no of non-zero element]
+                                       */
         sparse(mat,spar);
     }
 
